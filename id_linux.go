@@ -44,8 +44,5 @@ func machineID() (string, error) {
 	} else {
 		id = string(idbuf)
 	}
-	if err != nil {
-		return "", err
-	}
 	return trim(id), nil
 }
