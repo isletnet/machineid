@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/denisbrodbeck/machineid"
+	"github.com/isletnet/machineid"
 )
 
 func Example() {

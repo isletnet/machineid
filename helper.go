@@ -31,6 +31,10 @@ func readFile(filename string) ([]byte, error) {
 	return ioutil.ReadFile(filename)
 }
 
+func writeFile(filename string, data []byte) error {
+	return ioutil.WriteFile(filename, data, 644)
+}
+
 func trim(s string) string {
 	return strings.TrimSpace(strings.Trim(s, "\n"))
 }
