@@ -32,7 +32,7 @@ func readFile(filename string) ([]byte, error) {
 }
 
 func writeFile(filename string, data []byte) error {
-	return ioutil.WriteFile(filename, data, 644)
+	return ioutil.WriteFile(filename, data, 0644)
 }
 
 func trim(s string) string {
